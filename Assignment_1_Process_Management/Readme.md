@@ -1,26 +1,56 @@
 Assignment 1: Process Creation and Management Using Python OS Module
 
-Course Information
-    Course Code & Title: ENCS351 Operating Systems
-    Program: B.Tech in Computer Science and Engineering 
-    Submission: Individual submission via Learning Management System (LMS) with GitHub repository link
-    Experiment: Lab Experiment Sheet-1, Process Management
+![Python](https://img.shields.io/badge/Python-3.x-blue.svg)
+![OS](https://img.shields.io/badge/OS-Linux-green.svg)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-Overview
-    This assignment focuses on simulating Linux process management using Python, providing practical exposure to core operating system concepts. It covers:
-        - Process creation using os.fork()
-        - Command execution with os.execvp() or subprocess.run()
-        - Parent-child process relationships
-        - Simulation of zombie and orphan processes
-        - Process inspection via /proc filesystem
-        - Process prioritization using nice() values
+## Course Details
+- **Course Code & Name**: ENCS351 Operating System  
+- **Program Name**: B.Tech CSE, AI/ML, Data Science, Cybersecurity, FSD, UX/UI  
+- **Submission**: Individual submission via LMS with GitHub link  
+- **Experiment**: Lab Experiment Sheet-1  
 
-Learning Outcomes
-    - Understand the lifecycle of processes in a Linux environment
-    - Create and manage child processes using Python
-    - Simulate and verify zombie and orphan processes
-    - Retrieve and analyze process information from /proc
-    - Demonstrate the impact of process prioritization using nice() values
+---
+
+## Table of Contents
+- [Experiment Overview](#experiment-overview)
+- [Learning Objectives](#learning-objectives)
+- [Folder Structure](#folder-structure)
+- [Task Descriptions](#task-descriptions)
+  - [Task 1: Process Creation Utility](#task-1-process-creation-utility)
+  - [Task 2: Command Execution Using exec()](#task-2-command-execution-using-exec)
+  - [Task 3: Zombie & Orphan Processes](#task-3-zombie--orphan-processes)
+  - [Task 4: Inspecting Process Info from /proc](#task-4-inspecting-process-info-from-proc)
+  - [Task 5: Process Prioritization](#task-5-process-prioritization)
+- [Dependencies](#dependencies)
+- [How to Run Locally](#how-to-run-locally)
+- [Expected Outcomes](#expected-outcomes)
+- [Complexity Analysis](#complexity-analysis)
+- [Practical Applications](#practical-applications)
+- [Author](#author)
+- [References](#references)
+
+---
+
+## Experiment Overview
+This assignment simulates Linux process management using Python, focusing on:
+- **Process creation** using `os.fork()`
+- **Command execution** with `os.execvp()` or `subprocess.run()`
+- **Parent-child relationships**
+- **Zombie and orphan processes**
+- **Process inspection** via `/proc`
+- **Process prioritization** using `nice()` values
+
+> **Note**: This project must be run on a Linux-based OS for full functionality due to the use of `/proc` and process-related system calls.
+
+---
+
+## Learning Objectives
+- Understand the lifecycle of processes in Linux
+- Create child processes and execute system commands using Python
+- Simulate zombie and orphan processes
+- Inspect running processes using `/proc`
+- Demonstrate priority scheduling using `nice()` values
 
 Project Structure
     Assignment_1_Process_Management/
@@ -126,12 +156,19 @@ Applications
     - Real-time and embedded system programming
     - Debugging and process monitoring tools
 
-Author
-    Name: Tarun Goel
-    Program: B.Tech CSE
-    Experiment: Lab Experiment Sheet-1, ENCS351 Operating System
+---
 
-References
-    - Python Official Documentation: os module (https://docs.python.org/3/library/os.html)
-    - Python Official Documentation: subprocess module (https://docs.python.org/3/library/subprocess.html)
-    - Linux Process Management Concepts (https://man7.org/linux/man-pages/man7/)
+## Author
+- **Name**: Tarun Goel  
+- **Program**: B.Tech CSE  
+- **Experiment**: Lab Experiment Sheet-1, ENCS351 Operating System  
+
+---
+
+## References
+- [Python Official Documentation: os module](https://docs.python.org/3/library/os.html)
+- [Python Official Documentation: subprocess module](https://docs.python.org/3/library/subprocess.html)
+- [Linux Process Management Concepts](https://man7.org/linux/man-pages/man7/)
+```
+
+This README.md includes all the required details in a professional, GitHub-friendly format with badges, a table of contents, and clear instructions for running the project locally. Let me know if you need the Python code for the tasks or any other modifications!
