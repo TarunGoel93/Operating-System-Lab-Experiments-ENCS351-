@@ -1,0 +1,39 @@
+Output Task 1: Process Creation Utility
+Enter number of child processes: 3
+Child 1: PID=1201, Parent PID=1198
+Child 2: PID=1202, Parent PID=1198
+Child 3: PID=1203, Parent PID=1198
+All child processes finished.
+
+Output Task 2: Command Execution Using exec()
+Executing command ['ls'] in Child PID=1350
+... (list of files)
+Executing command ['date'] in Child PID=1351
+Sun Oct 05 11:45:30 IST 2025
+Executing command ['ps', '-l'] in Child PID=1352
+
+Output Task 3: Zombie & Orphan Processes
+--- ZOMBIE PROCESS DEMO ---
+Child (Zombie demo) exiting...
+Check using: ps -el | grep defunct
+--- ORPHAN PROCESS DEMO ---
+Parent exiting before child...
+Child became orphan. New Parent PID: 1
+
+Output Task 4: Inspecting Process Info from /proc
+Enter PID to inspect: 1234
+Name:   python3
+State:  S (sleeping)
+Pid:    1234
+PPid:   1201
+VmSize: 23456 kB
+Executable Path: /usr/bin/python3
+Open File Descriptors: ['0', '1', '2']
+
+Output Task 5: Process Prioritization
+Child PID=2101, nice=0
+Child PID=2102, nice=5
+Child PID=2103, nice=10
+Process 2101 completed.
+Process 2102 completed.
+Process 2103 completed.
